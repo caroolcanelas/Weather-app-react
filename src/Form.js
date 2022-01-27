@@ -9,7 +9,7 @@ export default function Form() {
           <input class="search" type="text" placeholder="Enter city name" />
           <input class="search-button" type="submit" value="🔍Search" />
           <button class="current-button" type="button">
-            Current
+            📍Current
           </button>
         </p>
       </form>

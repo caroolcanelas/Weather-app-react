@@ -3,7 +3,7 @@ import "./App.css";
 
 export default function Card() {
   return (
-    <div class="card">
+    <div class="today-weather">
       <div class="card-body">
         <h5 class="card-description">Rain</h5>
         <p class="card-text">
