@@ -1,6 +1,4 @@
-import Form from "./Form";
-import Header from "./Header";
-import Card from "./Card";
+import Weather from "./Weather";
 import Footer from "./Footer";
 
 import "./App.css";
@@ -9,9 +7,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Form />
-        <Header />
-        <Card />
+        <Weather defaultCity="Rio de Janeiro" />
       </div>
       <Footer />
     </div>
