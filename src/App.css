@@ -1,38 +1,123 @@
-.App {
+.search {
+  margin-top: 20px;
+  padding: 0px 100px 0px 100px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+fieldset {
+  border: 1px groove #ddd !important;
+  border-radius: 5px;
+  padding: 0 1.4em 1.4em !important;
+  margin: 20px;
+  margin-top: 20px;
+  background-image: linear-gradient(to top, #b8e4f0 0%, #1597e5 100%);
+}
+.container {
+  margin-top: 20px;
+}
+h1 {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500px;
+}
+h3 {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500px;
+}
+.card {
+  display: block;
+  margin: 0 auto;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+.card-title {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-text {
+  text-align: center;
+  font-size: large;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  text-align: center;
+  font-size: large;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.row {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.col-1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  margin: 45px;
+}
+.search-button {
+  background-color: #0c37c7;
+  margin: 15px;
+  border-radius: 30px;
+  padding: 10px 20px;
   color: white;
+  border-style: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.current-button {
+  background-color: #0c37c7;
+  margin: 15px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: white;
+  border-style: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-button:hover {
+  cursor: poiter;
+  background-color: rgb(1, 1, 80);
+  transition: all 2ms ease-in-out;
+}
+
+.current-button:hover {
+  cursor: poiter;
+  background-color: rgb(1, 1, 80);
+  transition: all 2ms ease-in-out;
+}
+
+.card-description {
+  text-align: center;
+  font-size: large;
+  text-transform: capitalize;
+}
+.celsius:hover {
+  cursor: pointer;
+}
+.github-link {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  margin: 5px;
+}
+.card-body {
+  width: 200px 242px;
+}
+
+.units .celsius {
+  color: rgb(33, 33, 33);
+  cursor: default;
+  text-decoration: none;
+}
+.units .celsius:hover {
+  text-decoration: none;
+}
+.col-2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+.weather-forecast {
+  margin-top: 25px;
 }
