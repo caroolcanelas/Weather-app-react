@@ -9,7 +9,6 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
@@ -24,25 +23,29 @@ export default function Weather(props) {
       <div className="form-search">
         <form id="search-city">
           <p>
-            <input class="search" type="text" placeholder="Enter city name" />
-            <input class="search-button" type="submit" value="🔍Search" />
-            <button class="current-button" type="button">
+            <input
+              className="search"
+              type="text"
+              placeholder="Enter city name"
+            />
+            <input className="search-button" type="submit" value="🔍Search" />
+            <button className="current-button" type="button">
               📍Current
             </button>
           </p>
         </form>
         <div className="header">
-          <h1 class="city">{weatherData.city}</h1>
-          <h3 class="dateTime">
+          <h1 className="city">{weatherData.city}</h1>
+          <h3 className="dateTime">
             <FormattedDate date={weatherData.date} />
           </h3>
         </div>
-        <div class="today-weather">
-          <div class="card-body">
-            <h5 class="card-description">{weatherData.description}</h5>
-            <p class="card-text">
+        <div className="today-weather">
+          <div className="card-body">
+            <h5 className="card-description">{weatherData.description}</h5>
+            <p className="card-text">
               <img src={weatherData.iconUrl} alt={weatherData.description} />
-              <span class="temperature">
+              <span className="temperature">
                 {Math.round(weatherData.temperature)}
               </span>
               <span class="units">
