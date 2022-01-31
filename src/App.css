@@ -122,3 +122,17 @@ p {
 .weather-forecast {
   margin-top: 25px;
 }
+
+.forecast-min-temp {
+  opacity: 0.8;
+}
+
+@media (max-width: 1190px) {
+  .today-weather {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .search {
+  }
+}
